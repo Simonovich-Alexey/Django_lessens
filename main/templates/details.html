@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ car.model }} {{ car.color }} {{ car.year }}</title>
+</head>
+<body>
+    <img src="{{ car.image.url }}" alt="">
+    <h1>{{ car.model }} {{ car.color }} {{ car.year }}</h1>
+    <ul>
+        <li>Модель: {{ car.model }}</li>
+        <li>Цвет: {{ car.color }}</li>
+        <li>Год: {{ car.year }}</li>
+        <li>Цена: {{ car.price }} рублей</li>
+    </ul>
+    <a href="{% url 'list' %}">Назад</a>
+</body>
+</html>
